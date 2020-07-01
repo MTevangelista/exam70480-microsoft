@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="outerDiv">
+        <p class='mainPara'>Main Paragraph</p>
+        <ul>
+            <li>First List Item</li>
+            <li>Second List Item</li>
+            <li>Third List Item</li>
+            <li>Fourth List Item</li>
+        </ul>
+        <div id="innerDiv">
+            <p class='subPara' id='P1'>Paragraph 1</p>
+            <p class='subPara' id='P2'>Paragraph 2</p>
+            <p class='subPara' id='P3'>Paragraph 3</p>
+            <p class='subPara' id='P4'>Paragraph 4</p>
+        </div>
+        <table>
+            <tr>
+                <td>Row 1
+                </td>
+            </tr>
+            <tr>
+                <td>Row 2
+                </td>
+            </tr>
+            <tr>
+                <td>Row 3
+                </td>
+            </tr>
+            <tr>
+                <td>Row 4
+                </td>
+            </tr>
+            <tr>
+                <td>Row 5
+                </td>
+            </tr>
+        </table>
+        <input type="text" /><input type="submit" value="Submit" />
+    </div>
+
+    <h1>Video</h1>
+    <video controls height="400" width="600" poster="http://blog.teamtreehouse.com/wp-content/uploads/2015/05/InternetSlowdown_Day.gif">
+        <source src="#" type="video/ogg" />
+        <source src="#" type="audio/mp4" />
+        <object>
+            <p>Video is not supported by this browser.</p>
+        </object>
+    </video>
+
+    <h1>Canvas</h1>
+    <canvas id="drawingSurface" width="600" height="400">Your browser does not support HTML5.</canvas>
+
+
+    <script>
+        window.onload = function () {
+            //Pega todos o conteúdo do elemento com Id especificado
+            // var element = document.getElementById("outerDiv");
+            // console.log(element.innerHTML);
+
+            //Conta todos os elementos <p>
+            //var paragraphs = document.getElementsByTagName("p"); 
+            //console.log(paragraphs.length);
+
+            //Pega todos elementos do 'tipo' paragrafo
+            //var element = document.querySelectorAll("p");
+            //console.log(element);
+
+            //Encontra um unico elemento pelo seu ID
+            //var element = document.querySelectorAll("#outerDiv");
+            //console.log(element);
+
+            //alterando o DOM
+            //var outerDiv = document.getElementById("outerDiv"); 
+            //var element = document.createElement("article"); 
+            //element.innerText = "INCLUI O ELEMENTO ARTICLE"; 
+            //outerDiv.appendChild(element);
+
+            // var afterRemove = document.getElementById("innerDiv"); 
+            // alert(afterRemove);
+        }
+    </script>
+</body>
+
+</html>
